@@ -12,5 +12,9 @@ RSpec.describe Dentist, type: :model do
     it {should validate_presence_of :rating}
   end
 
+  describe 'relationships' do
+    it {should have_many :patients}
+
+  end
 
 end
