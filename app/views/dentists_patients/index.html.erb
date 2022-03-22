@@ -1,0 +1,12 @@
+<h2> <%= @dentist.name %> Patient list</h2>
+<% @patients.each do |patient| %>
+    <%=patient.name%>
+    <%=patient.age%>
+    <%=patient.insurance_carrier%>
+    <%=patient.referred_by%>
+    <%=patient.referred_by_another_patient%>
+    <%=patient.dentist_id%>
+    <%=patient.created_at %>
+    <%=patient.updated_at %><br>
+
+<% end %>
