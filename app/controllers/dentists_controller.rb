@@ -1,6 +1,7 @@
 class DentistsController < ApplicationController
   def index
-    @dentists = Dentist.all
+    orin_dentists = Dentist.all
+    @dentists = orin_dentists.order(created_at: :desc)
   end
 
   def show
