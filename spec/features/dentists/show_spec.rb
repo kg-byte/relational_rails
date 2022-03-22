@@ -20,7 +20,7 @@ RSpec.describe 'dentist index page' do
     expect(page).to have_content(dentist2.accepting_new_patient)
     expect(page).to have_content(dentist2.hours)
     expect(page).to have_content(dentist2.rating)
-    save_and_open_page
+
   end
 
 end
