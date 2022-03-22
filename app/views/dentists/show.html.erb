@@ -5,4 +5,5 @@
     Hours:<%=@dentist.hours%> <br>
     Rating:<%=@dentist.rating%> <br>
     Created at:<%=@dentist.created_at%> <br>
-    Updated at:<%=@dentist.updated_at%>
+    Updated at:<%=@dentist.updated_at%> <br>
+    Total number of patients: <%= @dentist.patients.count %>

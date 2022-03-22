@@ -17,7 +17,6 @@ RSpec.describe 'dentist index page' do
     visit "/dentists"
     expect(dentist.name).to appear_before(dentist3.name)
     expect(dentist3.name).to appear_before(dentist2.name)
-    save_and_open_page
 
   end 
 end
