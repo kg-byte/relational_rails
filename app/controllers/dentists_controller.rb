@@ -3,4 +3,7 @@ class DentistsController < ApplicationController
     @dentists = Dentist.all
   end
 
+  def show
+    @dentist = Dentist.find(params[:id])
+  end
 end
