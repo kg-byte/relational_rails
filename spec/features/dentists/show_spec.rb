@@ -38,7 +38,6 @@ RSpec.describe 'dentist index page' do
     patient = Patient.create!(name:"Angela Morris", age: 28, insurance_carrier: 'Delta Dental', referred_by: 'NA', referred_by_another_patient:false, dentist_id: dentist.id)
     patient2 = Patient.create!(name:"Frank Poore", age: 36, insurance_carrier: 'Cigna Dental', referred_by: 'Angela Morris', referred_by_another_patient:true, dentist_id: dentist.id) 
     visit "/dentists/#{dentist.id}"
-    save_and_open_page
     expect(page).to have_link("Local Patients", :href =>"/dentists/#{dentist.id}/patients")
   end
 end

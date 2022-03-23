@@ -31,7 +31,6 @@ RSpec.describe 'patient index page' do
       visit "/patients/#{patient.id}"
       expect(page).to have_link("All Patients", :href =>'/patients')
       expect(page).to have_link("All Dentists", :href =>'/dentists')
-
   end
 
 
