@@ -17,6 +17,13 @@ RSpec.describe 'dentist index page' do
     visit "/dentists"
     expect(dentist.name).to appear_before(dentist3.name)
     expect(dentist3.name).to appear_before(dentist2.name)
-
   end 
+
+
+  it 'has dentists and patients list links' do 
+    dentist = Dentist.create!(name:"Discomfort Dental", max_patient_capacity:5, accepting_new_patient: true, hours: 'M-F, 9am - 6pm', rating: 2.1)
+    visit '/dentists'
+    expect(page).to have_link("List of Patients", :href =>'/patients')
+    expect(page).to have_link("List of Dentists", :href =>'/dentists')
+  end
 end
