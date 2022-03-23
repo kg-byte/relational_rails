@@ -34,4 +34,5 @@ ActiveRecord::Schema.define(version: 2022_03_21_223147) do
     t.index ["dentist_id"], name: "index_patients_on_dentist_id"
   end
 
+  add_foreign_key "dentists", "patients"
 end
