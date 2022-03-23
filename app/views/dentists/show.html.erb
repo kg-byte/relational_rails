@@ -1,4 +1,5 @@
 <%= render :partial =>'widgets/links' %>
+<a href="/dentists/<%=@dentist.id%>/patients">Local Patients</a>
 <h2>Dentist information</h2>
     Name:<%=@dentist.name%> <br>
     Max patient capacity:<%=@dentist.max_patient_capacity%> <br>

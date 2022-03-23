@@ -23,7 +23,7 @@ RSpec.describe 'dentist index page' do
   it 'has dentists and patients list links' do 
     dentist = Dentist.create!(name:"Discomfort Dental", max_patient_capacity:5, accepting_new_patient: true, hours: 'M-F, 9am - 6pm', rating: 2.1)
     visit '/dentists'
-    expect(page).to have_link("List of Patients", :href =>'/patients')
-    expect(page).to have_link("List of Dentists", :href =>'/dentists')
+    expect(page).to have_link("All Patients", :href =>'/patients')
+    expect(page).to have_link("All Dentists", :href =>'/dentists')
   end
 end
