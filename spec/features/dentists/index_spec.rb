@@ -19,5 +19,4 @@ RSpec.describe 'dentist index page' do
     expect(dentist3.name).to appear_before(dentist2.name)
   end 
 
-
 end
