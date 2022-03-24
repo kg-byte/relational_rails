@@ -12,7 +12,6 @@ RSpec.describe Patient, type: :model do
 
   describe 'relationships' do
     it {should belong_to :dentist}
-
   end
 
 end
