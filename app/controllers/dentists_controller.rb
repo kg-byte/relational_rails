@@ -15,6 +15,8 @@ class DentistsController < ApplicationController
     redirect_to '/dentists'
   end
 
+  def edit
+  end
 
   private
     def dentist_params

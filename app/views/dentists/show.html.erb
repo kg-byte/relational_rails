@@ -9,3 +9,4 @@
     Created at:<%=@dentist.created_at%> <br>
     Updated at:<%=@dentist.updated_at%> <br>
     Total number of patients: <%= @dentist.patients.count %>
+<%= button_to "Edit", "/dentists/#{@dentist.id}/edit", method: :get%>
