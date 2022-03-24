@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/patients', to: 'patients#index'
   get '/patients/:id', to: 'patients#show'
   get '/dentists/:dentist_id/patients', to: 'dentist_patients#index'
+  post 'dentists', to: 'dentists#create'
 end
