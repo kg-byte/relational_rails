@@ -19,7 +19,7 @@ RSpec.describe 'the Dentist edit' do
 		click_button 'Edit'
 		fill_in('Name', with: 'Comfortish Dental')
 		fill_in'max_patient_capacity', with: '1'
-		fill_in 'accepting_new_patient', with: 'true'
+		fill_in 'accepting_new_patient', with: 'false'
 		fill_in 'Hours', with: 'M-S, 10am - 5pm'
 		fill_in 'Rating', with: '2.3'
 		click_button 'Update'
